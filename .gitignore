@@ -1,0 +1,8 @@
+*.html
+*.RData
+*.Rproj
+*.Rhistory
+*.Rproj.user
+images/
+*.knit.md
+*_files

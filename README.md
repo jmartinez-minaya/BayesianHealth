@@ -14,7 +14,7 @@ This is a 15-hour course designed for students, researchers, and professionals i
 - **3. Predictions**: How Bayesian inference is used for making predictions, including predictive distributions and uncertainty quantification.
 - **4. Hierarchical Bayesian Models**: Introduction to hierarchical models, including their structure and benefits, particularly in healthcare settings where multilevel data is common.
 
-### Unit 2: Bayesian Software for MCMC methods
+### Unit 2: Bayesian GLM. MCMC methods
 
 - **1. Bayesian computation. MCMC methods**: Introduction to Markov Chain Monte Carlo (MCMC) methods, focusing on their role in Bayesian computation, and discussing key algorithms like Metropolis-Hastings.
 - **2. Bayesian Software for MCMC**: Overview of popular software for implementing MCMC methods, including JAGS and Stan, with a focus on practical considerations and healthcare applications.
