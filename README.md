@@ -4,33 +4,39 @@ This is a 15-hour course designed for students, researchers, and professionals i
 
 # Course Structure (15 Hours)
 
-## Part I: Bayesian Inference. An introduction, MCMC methods and applications in health
+## Part I: Bayesian Inference. An introduction and applications in health
 
 ### Unit 1: An introduction to Bayesian inference
 
-- **1. A bit of history**: Introduction to the origins of Bayesian inference, including key developments and notable contributors. Examples such as the United Kingdom aviation case and the transatlantic flight. Application in evaluating diagnostic tests
+- **1. A bit of history**: Introduction to the origins of Bayesian inference, including key developments and notable contributors. Examples such as the United Kingdom aviation case and the transatlantic flight. Application in evaluating diagnostic tests.
 - **2. Bayesian approach**: Overview of the Bayesian paradigm, focusing on prior beliefs, posterior distributions, and how data updates beliefs.
   - Examples/S1-BI_beta_binomial: beta-binomial conjugate prior. An application to intracerebral hemorrhage.
 - **3. Predictions**: How Bayesian inference is used for making predictions, including predictive distributions and uncertainty quantification.
-- **4. Hierarchical Bayesian Models**: Introduction to hierarchical models, including their structure and benefits, particularly in healthcare settings where multilevel data is common.
 
-### Unit 2: Bayesian GLM. MCMC methods
+---
+
+## Part II: Bayesian GLMs and Hierarchical Models using MCMC methods and INLA
+
+### Unit 2: Bayesian Computation and Mixed models
 
 - **1. Bayesian computation. MCMC methods**: Introduction to Markov Chain Monte Carlo (MCMC) methods, focusing on their role in Bayesian computation, and discussing key algorithms like Metropolis-Hastings.
-- **2. Bayesian Software for MCMC**: Overview of popular software for implementing MCMC methods, including JAGS and Stan, with a focus on practical considerations and healthcare applications.
-  - Examples/S1-JAGS-heart_attack: JAGS for logistic regression models. The case of heart attacks.
-  - Examples/S1-brms-herth_attack: brms for logistic regression models. The case of heart attacks.
-  - Exercises/S1-diabetes: exercise for studying diabetes using JAGS and brms.
+- **2. Bayesian Software**: Overview of popular software for implementing MCMC methods, including JAGS and Stan, with a focus on practical considerations and healthcare applications.
+  - Examples/S2-JAGS-heart_attack: JAGS for logistic regression models. The case of heart attacks.
+  - Examples/S2-brms-heart_attack: brms for logistic regression models. The case of heart attacks.
+  - Exercises/S2-diabetes: Exercise for studying diabetes using JAGS and brms.
+- **3. Hierarchical Bayesian Models for Mixed Models**: Introduction to hierarchical Bayesian models, focusing on their application in mixed models for healthcare data. Examples include random intercepts and slopes, as well as variability across hierarchical levels.
+  - Exercises/S1-diabetes: Exercise for studying diabetes using brms and including random effects.
+  
+### Unit 3: Hierarchical Bayesian Models and INLA Methodology (Unders construction)
 
-
-## Part II (material under construction)
-
-### Unit 3: Hierarchical Bayesian Models. INLA Methodology 
-
-- Concepts of Hierarchical Bayesian Models and their implementation.
-- Bayesian mixed models for multicenter and longitudinal studies.
+- Concepts of Hierarchical Bayesian Models with INLA.
+- Bayesian mixed models for multicenter and longitudinal studies using INLA.
 - Computational Bayes: Introduction to the Integrated Nested Laplace Approximation (INLA).
 - Implementation in R-INLA for multicenter studies.
+
+---
+
+## Part III: INLA Methodology and Spatial Statistics (Under construction)
 
 ### Unit 4: Spatial Statistics in Lattice Data Using R-INLA and inlabru 
 
@@ -38,13 +44,16 @@ This is a 15-hour course designed for students, researchers, and professionals i
 - Besag York and Mollié (BYM) models and their use in lattice data.
 - Application in disease mapping.
 
+---
 
-## Part III (material under construction)
+## Part IV: Geostatistics and Environmental Health (Under construction)
+
 ### Unit 5: Geostatistics for Environmental Health 
 
 - Basics of Bayesian geostatistics: Modeling spatially continuous data.
 - Applications of geostatistical models in environmental health research.
 - Practical implementation using R-INLA for analyzing environmental exposures.
+
 
 # Bibliography
 
