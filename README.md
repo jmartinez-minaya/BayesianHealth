@@ -26,13 +26,31 @@ This is a 15-hour course designed for students, researchers, and professionals i
   - Exercises/S2-diabetes: Exercise for studying diabetes using JAGS and brms.
 - **3. Hierarchical Bayesian Models for Mixed Models**: Introduction to hierarchical Bayesian models, focusing on their application in mixed models for healthcare data. Examples include random intercepts and slopes, as well as variability across hierarchical levels.
   - Exercises/S1-diabetes: Exercise for studying diabetes using brms and including random effects.
-  
-### Unit 3: Hierarchical Bayesian Models and INLA Methodology (Unders construction)
 
-- Concepts of Hierarchical Bayesian Models with INLA.
-- Bayesian mixed models for multicenter and longitudinal studies using INLA.
-- Computational Bayes: Introduction to the Integrated Nested Laplace Approximation (INLA).
-- Implementation in R-INLA for multicenter studies.
+
+
+### Unit 3: Hierarchical Bayesian Models and INLA Methodology
+
+- **1. Hierarchical Bayesian Models with INLA**
+  - Overview of hierarchical Bayesian models.
+  - Advantages of INLA over MCMC for efficiency and accuracy.
+
+- **2. Elements to understand how INLA works**
+
+
+- **3. Putting all the pieces together: INLA**
+  - Key steps of the INLA methodology.
+  - Efficient posterior approximation for latent Gaussian models.
+
+- **4. Implementation in `R-INLA`**
+
+
+- **5. Model Selection**
+  - Using DIC and WAIC for model comparison.
+
+- **6. Examples**
+  - Examples/S2-INLA-rain
+  - Examples/S2-INLA-measurement_agreement_COPD
 
 ---
 
