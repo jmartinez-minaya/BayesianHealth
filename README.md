@@ -54,37 +54,35 @@ This is a 15-hour course designed for students, researchers, and professionals i
 
 ---
 
-## Part III: INLA Methodology and Spatial Statistics (Under construction)
+## Part III: INLA Methodology and Spatial Statistics 
 
-### Unit 4: Spatial Statistics in Lattice Data Using R-INLA and inlabru 
+### Unit 4: Bayesian Spatial Statistics 
 
-- Introduction to spatial statistics.
-- Besag York and Mollié (BYM) models and their use in lattice data.
-- Application in disease mapping.
+- **Introduction to Spatial statistics**
+- **Types of Spatial Data**
+- **Disease mapping**
+  - Examples/S3-INLA-disease-mapping: an example of disease mapping in oral cancer in the Valencian Region.
+- **Geostatistics**
+  - Examples/S3-inlabru-geostatistics: an example of malaria prevalence in Mozambique.
+- **PC-priors**
+
 
 ---
 
-## Part IV: Geostatistics and Environmental Health (Under construction)
-
-### Unit 5: Geostatistics for Environmental Health 
-
-- Basics of Bayesian geostatistics: Modeling spatially continuous data.
-- Applications of geostatistical models in environmental health research.
-- Practical implementation using R-INLA for analyzing environmental exposures.
-
 
 # Bibliography
-
 1. Bachl, F. E., Lindgren, F., Borchers, D. L., & Illian, J. B. (2019). *inlabru: An R package for Bayesian spatial modelling from ecological survey data*. Methods in Ecology and Evolution, 10(6), 760-766. DOI: 10.1111/2041-210X.13168.
 2. Blangiardo, M., & Cameletti, M. (2015). *Spatial and Spatio-temporal Bayesian Models with R-INLA*. Wiley.
-3. Broemeling, L. D. (2013). Bayesian Methods in Epidemiology. Chapman and Hall/CRC
+3. Broemeling, L. D. (2013). *Bayesian Methods in Epidemiology*. Chapman and Hall/CRC.
 4. Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., & Rubin, D. B. (2013). *Bayesian Data Analysis* (3rd ed.). Chapman and Hall/CRC.
 5. Gómez-Rubio, V. (2020). *Bayesian Inference with INLA*. CRC Press.
 6. Krainski, E., Gómez-Rubio, V., Bakka, H., Lenzi, A., Rue, H., & Lindgren, F. (2019). *Advanced Spatial Modeling with Stochastic Partial Differential Equations Using R and INLA*. Chapman and Hall/CRC.
 7. Lawson, A. B. (2018). *Bayesian Disease Mapping: Hierarchical Modeling in Spatial Epidemiology* (3rd ed.). CRC Press.
-8. Lesaffre, E., & Lawson, A. B. (2012). Bayesian Biostatistics. Chapman & Hall/CRC Biostatistics Series]
-9. Rue, H., Martino, S., & Chopin, N. (2009). *Approximate Bayesian Inference for Latent Gaussian Models by Using Integrated Nested Laplace Approximations*. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 71(2), 319-392.
-
+8. Lesaffre, E., & Lawson, A. B. (2012). *Bayesian Biostatistics*. Chapman & Hall/CRC Biostatistics Series.
+9. Martínez-Beneito, M. A., & Botella-Rocamora, P. (2019). *Disease Mapping: From Foundations to Multidimensional Modeling*. CRC Press.
+10. Moraga, P. (2019). *Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny*. Chapman and Hall/CRC.
+11. Moraga, P. (2021). *Handbook of Spatial Epidemiology and Disease Modeling: Applications with R*. CRC Press.
+12. Rue, H., Martino, S., & Chopin, N. (2009). *Approximate Bayesian Inference for Latent Gaussian Models by Using Integrated Nested Laplace Approximations*. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 71(2), 319-392.
 
 # Software
 
@@ -105,7 +103,7 @@ This will be the packages required for the course
 install.packages(pkgs = c("sf", "spdep", "lattice", "latticeExtra", "viridis", 
                           "gridExtra", "RColorBrewer", "INLA", "ggthemes", 
                           "leaflet", "ggplot2", "dplyr", "inlabru", "rnaturalearth", 
-                          "patchwork", "runjags", "brms"))
+                          "patchwork", "runjags", "brms", "inlabru"))
 
 ```
 
