@@ -11,7 +11,7 @@
 
 <meta name="author" content="Joaquín Martínez-Minaya" />
 
-<meta name="date" content="2026-03-24" />
+<meta name="date" content="2026-03-31" />
 
 <title>Exercise 1: Bayesian Logistic Regression in JAGS and BRMS. Diabetes case</title>
 
@@ -2827,7 +2827,7 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Exercise 1: Bayesian Logistic Regression in JAGS and BRMS. Diabetes case</h1>
 <h4 class="author">Joaquín Martínez-Minaya</h4>
-<h4 class="date">2026-03-24</h4>
+<h4 class="date">2026-03-31</h4>
 
 </div>
 
@@ -2862,6 +2862,48 @@ head(data_diab)</code></pre>
 {"columns":[{"label":["Pregnancies"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Glucose"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["BloodPressure"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["SkinThickness"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Insulin"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["BMI"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["DiabetesPedigreeFunction"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["Age"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["Outcome"],"name":[9],"type":["dbl"],"align":["right"]}],"data":[{"1":"6.000000","2":"148","3":"72","4":"35.00000","5":"155.5482","6":"33.6","7":"0.627","8":"50","9":"1"},{"1":"1.000000","2":"85","3":"66","4":"29.00000","5":"155.5482","6":"26.6","7":"0.351","8":"31","9":"0"},{"1":"8.000000","2":"183","3":"64","4":"29.15342","5":"155.5482","6":"23.3","7":"0.672","8":"32","9":"1"},{"1":"1.000000","2":"89","3":"66","4":"23.00000","5":"94.0000","6":"28.1","7":"0.167","8":"21","9":"0"},{"1":"4.494673","2":"137","3":"40","4":"35.00000","5":"168.0000","6":"43.1","7":"2.288","8":"33","9":"1"},{"1":"5.000000","2":"116","3":"74","4":"29.15342","5":"155.5482","6":"25.6","7":"0.201","8":"30","9":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
+</div>
+<div id="tasks" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Tasks</h1>
+<ol style="list-style-type: decimal">
+<li><p>Fit a Bayesian logistic regression model using to explain <code>Outcome</code> as a function of<br />
+<code>Pregnancies</code>, <code>Glucose</code>, <code>BloodPressure</code>, <code>Insulin</code>, <code>BMI</code>, <code>DiabetesPedigreeFunction</code>, and <code>Age</code>.</p></li>
+<li><p>Write down the full Bayesian model specification, including:</p>
+<ul>
+<li>the likelihood,</li>
+<li>the prior distributions for all parameters.</li>
+</ul></li>
+<li><p>Based on the posterior distributions of the coefficients, determine which covariates can be considered relevant from a Bayesian perspective. Clearly justify your answer.</p></li>
+<li><p>Compute the 95% credible intervals for all model parameters.</p></li>
+<li><p>Interpret the results for the main covariates (<code>Glucose</code>, <code>BMI</code>, <code>Age</code>, <code>DiabetesPedigreeFunction</code>) using both:</p>
+<ul>
+<li>the regression coefficients,</li>
+<li>and the corresponding posterior odds ratios.</li>
+</ul></li>
+<li><p>Consider a new patient with the following characteristics:</p>
+<ul>
+<li><code>Pregnancies = 4</code><br />
+</li>
+<li><code>Glucose = 155</code><br />
+</li>
+<li><code>BloodPressure = 72</code><br />
+</li>
+<li><code>Insulin = 140</code><br />
+</li>
+<li><code>BMI = 33</code><br />
+</li>
+<li><code>DiabetesPedigreeFunction = 0.62</code><br />
+</li>
+<li><code>Age = 46</code></li>
+</ul>
+<p>6.1. Obtain the posterior predictive distribution of the probability of diabetes for this patient.</p>
+<p>6.2. Compute:</p>
+<ul>
+<li>the posterior mean of this probability,</li>
+<li>and its 95% credible interval.</li>
+</ul>
+<p>6.3. Suppose that a patient is classified as having a high risk of diabetes when the predicted probability <span class="math inline">\(\pi\)</span> exceeds a threshold <span class="math inline">\(0.7\)</span>.Discuss how confident we are that this new patient is likely to have diabetes from a Bayesian perspective.</p></li>
+</ol>
 </div>
 
 

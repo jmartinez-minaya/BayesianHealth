@@ -60,4 +60,39 @@ head(data_diab)
 
 
 
+# Tasks
+
+1. Fit a Bayesian logistic regression model using to explain `Outcome` as a function of  
+   `Pregnancies`, `Glucose`, `BloodPressure`, `Insulin`, `BMI`, `DiabetesPedigreeFunction`, and `Age`.
+
+2. Write down the full Bayesian model specification, including:
+   - the likelihood,
+   - the prior distributions for all parameters.
+
+3. Based on the posterior distributions of the coefficients, determine which covariates can be considered relevant from a Bayesian perspective. Clearly justify your answer.
+
+4. Compute the 95% credible intervals for all model parameters.
+
+5. Interpret the results for the main covariates (`Glucose`, `BMI`, `Age`, `DiabetesPedigreeFunction`) using both:
+   - the regression coefficients,
+   - and the corresponding posterior odds ratios.
+
+6. Consider a new patient with the following characteristics:
+   - `Pregnancies = 4`  
+   - `Glucose = 155`  
+   - `BloodPressure = 72`  
+   - `Insulin = 140`  
+   - `BMI = 33`  
+   - `DiabetesPedigreeFunction = 0.62`  
+   - `Age = 46`  
+
+    
+    6.1. Obtain the posterior predictive distribution of the probability of diabetes for this patient.
+
+    6.2. Compute:
+    - the posterior mean of this probability,
+     - and its 95% credible interval.
+
+    6.3. Suppose that a patient is classified as having a high risk of diabetes when the predicted probability $\pi$ exceeds a threshold $0.7$.Discuss how confident we are that this new patient is likely to have diabetes from a Bayesian perspective.
+
 

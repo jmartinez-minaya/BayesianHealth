@@ -204,6 +204,12 @@ posterior_samples <- brms::as_draws_df(fit_brms) %>%
   dplyr::select(starts_with("b_age60>EQ60"), starts_with("b_sbp140>EQ140"))
 names(posterior_samples) <- c("b_age60", "b_sbp140")
 
+
+
+post_sim <- posterior_samples$b_age60
+hist(post_sim)
+table(post_sim>0)/(length(post_sim))
+
 # Calculate odds ratios for age60 and sbp140
 posterior_samples <- posterior_samples %>%
   dplyr::mutate(
@@ -294,6 +300,11 @@ summary_predictions <- tibble(
 # Print the summarized predictions
 print(summary_predictions)
 
+
+predictions %>% dim(.)
+
+
+predictions[,1] %>% hist(.)
 ```
 
 The prediction step provides us with posterior probabilities of myocardial infarction for different age and blood pressure categories. These summaries include the posterior mean and the 95% credible interval, helping us understand the likelihood of MI for different groups in the population.
